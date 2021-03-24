@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BMy portfolio</title>
+    <title>My portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
@@ -54,37 +54,37 @@
 
             <ul class="main-menu">
               <li class="active">
-                <a href="index.html#home" class="nav-anim">
+                <a href="{% url 'index' %}#home" class="nav-anim">
                   <span class="menu-icon lnr lnr-home"></span>
                   <span class="link-text">Главная</span>
                 </a>
               </li>
               <li>
-                <a href="index.html#about-me" class="nav-anim">
+                <a href="{% url 'index' %}#about-me" class="nav-anim">
                   <span class="menu-icon lnr lnr-user"></span>
                   <span class="link-text">Обо мне</span>
                 </a>
               </li>
               <li>
-                <a href="index.html#resume" class="nav-anim">
+                <a href="{% url 'index' %}#resume" class="nav-anim">
                   <span class="menu-icon lnr lnr-graduation-hat"></span>
                   <span class="link-text">Резюме</span>
                 </a>
               </li>
               <li>
-                <a href="index.html#portfolio" class="nav-anim">
+                <a href="{% url 'index' %}#portfolio" class="nav-anim">
                   <span class="menu-icon lnr lnr-briefcase"></span>
                   <span class="link-text">Портфолио</span>
                 </a>
               </li>
               <li>
-                <a href="index.html#blog" class="nav-anim">
+                <a href="{% url 'index' %}#blog" class="nav-anim">
                   <span class="menu-icon lnr lnr-book"></span>
                   <span class="link-text">Блог</span>
                 </a>
               </li>
               <li>
-                <a href="index.html#contact" class="nav-anim">
+                <a href="{% url 'index' %}#contact" class="nav-anim">
                   <span class="menu-icon lnr lnr-envelope"></span>
                   <span class="link-text">Контакты</span>
                 </a>
@@ -100,10 +100,10 @@
             </div>
 
             <div class="header-buttons">
-              <a href="index.html#" target="_blank" class="btn btn-primary">Download CV</a>
+              <a href="index.html#" target="_blank" class="btn btn-primary">Скачать Резюме</a>
             </div>
 
-            <div class="copyrights">© 2020 All rights reserved.</div>
+            <div class="copyrights">© 2021 ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
           </header>
           {% block content %}
           {% endblock %}
